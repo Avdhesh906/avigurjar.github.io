@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="This is 3D text Example">
+<title>3D Text</title>
+<style>
+ .three-d {
+    font-size: 50px;
+    margin: 5px;
+    padding: 20px;
+    color: #FFF;
+    transform: skew(-10deg,-18deg) rotate(-9deg);
+    background-color: green;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    text-shadow: 0 0 2px black;
+    &:hover {
+         text-shadow: -5px -5px 1px black;
+         transform: skew(-10deg, -18deg) rotate(-9deg) scale(1.1);
+         box-shadow: -5px -5px 0 0 #FFF;
+      }
+ }
+</style>
+</head>
+<body oncontextmenu="return false;">
+<p class="three-d">AVDHESH GURJAR</p>
+</body>
+</html>
